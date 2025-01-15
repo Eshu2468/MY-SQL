@@ -1,0 +1,81 @@
+SQL
+=======================================================
+-> It is known as Structured query language
+-> Programming Language
+-> Used to manage and manipulate relational database
+-> Allows you to interact with database by performing operations such as 
+   * Query
+   * Update
+   * Delete
+   * Insert that data
+
+Importance of SQL:
+====================================================================================================================================================================================================
+* Data Management: SQL helps in the creation, modification and management of database, tables and relationships between them. 
+                   It is used to efficiently query, manipulate and store the data in a structured format.
+
+* standardization: SQL is a standardizes language used across many database systems like
+MySQL, PostgreSQL, Oracle and SQL servers.
+
+SQL Architecture:
+=====================================================================================================================================================================================================
+-> SQL Engine: The core component, that interprets and execute SQL queries.
+-> Relational Database Management System (RDBMS): The software that manages the 
+                                                  database(e.g., MySQL, PostgreSQL,
+                                                  SQL Server). 
+                                                  RDBMS organizes data into tables  
+                                                  and enforces rules for 
+                                                  storing, retrieving, and managing data.
+-> Tables: Data is organized into tables made up of rows (records) and columns (fields). Each table represents an entity, and each column represents a property of that entity.
+
+What is database?
+-----------------
+A database is an organized collection of data that is stored and managed electronically. It allows users to efficiently store, retrieve, update, and analyze information. Databases are used in various applications, from business and education to healthcare and entertainment.
+
+# Types of Databases:
+* Relational Databases (RDBMS): Use tables to store data (e.g., MySQL, PostgreSQL, SQL Server).
+* NoSQL Databases: Handle unstructured or semi-structured data (e.g., MongoDB, Cassandra).
+* Object-Oriented Database (OODBMS): Stores data in the form of objects, similar to how data is represented in object-oriented programming languages (e.g., classes and objects).
+* Hierarchical Database: Data is organized in a tree-like structure where each record has a single parent and potentially many children (parent-child relationship).
+* Cloud Databases: Hosted in the cloud (e.g., AWS RDS, Azure SQL Database).
+* Distributed Databases: Data is spread across multiple locations.
+* In-Memory Databases: Store data in memory for faster access (e.g., Redis).
+
+# Examples of Databases in Use:
+* E-commerce: Storing product details, customer data, and transactions.
+* Banking: Managing accounts, transactions, and user details.
+* Social Media: Storing user profiles, posts, and interactions.
+
+What Are SQL Commands?
+------------------------
+SQL Commands are instructions used to interact with a database. SQL (Structured Query Language) allows users to perform operations such as retrieving, 
+inserting, updating, and deleting data in a database, as well as managing the database structure itself.
+
+Types of SQL Commands?
+------------------------
+SQL commands are broadly categorized into five types based on their functionality:
+
+	
+1. DDL (Data Definition Language)	
+* CREATE = Creates new database objects (tables, databases, views, etc.).
+* ALTER  = Modifies the structure of existing database objects.
+* DROP = Deletes database objects like tables, views, or entire databases.
+* TRUNCATE = Deletes all rows from a table but keeps its structure intact.
+
+2. DML (Data Manipulation Language)	
+* INSERT = Adds new rows of data to a table.
+* UPDATE = Modifies existing data in a table.
+* DELETE= Removes specific rows from a table.
+
+3. DQL (Data Query Language)	
+* SELECT = Retrieves data from a database table or view.
+
+4. DCL (Data Control Language)	
+* GRANT = Provides specific privileges to users or roles.
+* REVOKE = Removes specific privileges from users or roles.
+
+5. TCL (Transaction Control Language)	
+* COMMIT = Permanently saves all changes made in a transaction.
+* ROLLBACK= Reverts changes made during the current transaction.
+* SAVEPOINT = Sets a specific point in a transaction to which you can later roll back.
+
