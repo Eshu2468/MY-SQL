@@ -1,0 +1,119 @@
+===> DDL (Data Definition Language) commands are used to define and manage the structure of database objects like tables, views, schemas, and more.
+
+1. CREATE Command
+The CREATE command is used to create new database objects such as databases, tables, views, indexes, or stored procedures.
+
+Syntax:
+--------
+CREATE TABLE table_name (
+    column1 datatype constraint,
+    column2 datatype constraint,
+    ...
+);
+
+
+Example: 
+--------
+CREATE TABLE Demotable (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50),
+    DateOfJoining DATE
+);
+
+
+Data types in MYSQL:
+------------------------
+most frequently used MySQL data types:
+
+Category	Data Type	Description
+===================================================================================
+Numeric	        INT	        |     Standard integer (whole numbers).
+                BIGINT	    |     Large integer for bigger values.
+                DECIMAL	    |     Fixed-point numbers for precise calculations.
+                FLOAT	      |     Floating-point numbers for approximate values.
+
+String	        VARCHAR	    |     Variable-length string (text).
+                CHAR	      |     Fixed-length string.
+                TEXT	      |     Large text values.
+
+Date & Time   	DATE        |    Date (YYYY-MM-DD).
+                DATETIME	  |    Date and time (YYYY-MM-DD HH:MM:SS).
+                TIMESTAMP	  |    Auto-updated date and time for tracking changes.
+                TIME	      |    Time only (HH:MM:SS).
+
+
+2. ALTER Command
+-----------------
+The ALTER command is used to modify the structure of an existing database object. This could involve adding, deleting, or modifying columns or constraints.
+
+Syntax:
+-------
+ALTER TABLE table_name 
+ADD column_name datatype constraint;
+
+Example: (add a column)
+--------
+ALTER TABLE Demotable 
+ADD Department VARCHAR(50);
+
+#modify a column: 
+
+ALTER TABLE demotable 
+ALTER COLUMN LastName VARCHAR(100);
+
+or 
+
+ALTER TABLE Demotable 
+MODIFY COLUMN LastName VARCHAR(100);
+
+(Modifies the LastName column to allow up to 100 characters.)
+
+# Drop column
+
+ALTER TABLE demotable 
+DROP COLUMN DateOfJoining;
+
+(Removes the DateOfJoining column from the table.)
+
+
+3. DROP Command
+The DROP command is used to delete database objects such as tables, views, or entire databases.
+
+Syntax:
+------
+DROP TABLE table_name;
+
+Example:
+-------
+DROP TABLE demotable;
+(This command deletes the Demo table and all its data. The table structure is also removed.)
+
+
+4. TRUNCATE Command
+The TRUNCATE command is used to delete all rows from a table while keeping the table structure intact.
+
+Syntax:
+-------
+TRUNCATE TABLE table_name;
+
+Example:
+--------
+TRUNCATE TABLE demotable;
+
+
+Key Differences Between DROP and TRUNCATE:
+-----------------------------------------------------------------------
+Feature	                         DROP	                     TRUNCATE
+-------------------------------------------------------------------------
+Deletes structure too	           Yes				                 No
+Deletes data only		             No				                   Yes
+--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
