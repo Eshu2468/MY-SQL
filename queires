@@ -1,0 +1,53 @@
+create database shilpa;
+
+use shilpa;
+
+show tables;
+
+select * from location_data;
+
+
+select country, state, city from location_data;
+
+
+select country, state, city from location_data
+limit 2;
+
+select count(*) from location_data;
+
+select distinct state from location_data;
+
+select * from location_data where city='Alderpoint';
+
+select * from location_data 
+where city='bell' and total_population > 50000;
+
+select count(*) from location_data 
+where city='bell' or total_population > 50000;
+
+select * from location_data 
+where city='bell' or total_population > 50000;
+
+select * from location_data;
+
+
+select * from location_data
+where city in ('glendale', 'martinez', 'camarillo');
+
+
+select distinct city from location_data
+where city in ('glendale', 'martinez', 'camarillo');
+
+
+select distinct city from location_data
+where city not in ('glendale', 'martinez', 'camarillo');
+
+select * from location_data
+where city not in ('glendale', 'martinez', 'camarillo');
+
+
+select * from location_data
+where total_population between 50000 and  60000;
+
+
+select * from location_data where city is null;
